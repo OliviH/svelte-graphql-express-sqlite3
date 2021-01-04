@@ -1,0 +1,2 @@
+# svelte-graphql-express-sqlite3
+EXAMPLE SVELTE EXPRESS GRAPHQL AND SQLITE3 DB
