@@ -1,3 +1,4 @@
+const fs = require('fs-extra')
 const dotenv = require('dotenv')
 const path = require("path")
 const sqlite3 = require('sqlite3').verbose()
@@ -12,6 +13,7 @@ if (!DB_PATH) {
     process.exit("9")
 }
 const path_db = path.resolve(__dirname, "../../", DB_PATH)
+fs.ensureDirSync(path_db)
 const database = new sqlite3.Database(path.resolve(path_db, 'micro-blog.db'))
 
 const query = `
