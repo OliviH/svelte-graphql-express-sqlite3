@@ -1,0 +1,12 @@
+###
+GET http://localhost:5050/r/graphql/?query={Posts{title,author}}
+
+Accept: application/json
+
+###
+POST http://localhost:5050/r/graphql
+Content-Type: application/graphql
+Body:
+    "{Posts{title,author}}"
+
+###
