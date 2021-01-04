@@ -18,3 +18,5 @@ cd api
 yarn
 yarn startDev
 ```
+3.
+OPen browser at : http://localhost:5050
