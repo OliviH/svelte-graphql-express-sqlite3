@@ -26,13 +26,6 @@ const query = `
 
 database.run(query)
 
-class pull_db {
-    constructor(name){
-        this.name = name
-    }
-}
-
 module.exports = {
-    database,
-    pull_db
+    database
 }
